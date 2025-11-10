@@ -1,0 +1,55 @@
+# Proyek: Analisis Clustering & Klasifikasi Transaksi Bank
+
+Proyek ini adalah submission untuk kelas "Belajar Machine Learning untuk Pemula" di Dicoding. Proyek ini mendemonstrasikan alur kerja End-to-End Machine Learning, mulai dari pembersihan data, clustering (unsupervised), hingga klasifikasi (supervised) untuk mengidentifikasi pola transaksi.
+
+## 🎯 Tujuan Proyek
+
+Tujuan dari proyek ini adalah:
+1.  **Clustering (Unsupervised):** Mengelompokkan nasabah ke dalam beberapa cluster berdasarkan perilaku transaksi mereka menggunakan algoritma K-Means.
+2.  **Klasifikasi (Supervised):** Membangun model klasifikasi yang dapat memprediksi cluster (target) seorang nasabah berdasarkan data transaksinya.
+
+---
+
+## 🚀 Alur Pengerjaan
+
+Proyek ini dibagi menjadi dua *notebook* utama:
+
+### 1. Notebook Clustering
+* **Pembersihan Data:** Menangani nilai null dan duplikat.
+* **Pra-pemrosesan:**
+    * **StandardScaler:** Melakukan standarisasi pada fitur numerik.
+    * **LabelEncoder:** Mengubah fitur kategorikal menjadi numerik.
+    * **Handling Outlier:** Menggunakan metode IQR untuk membersihkan data.
+* **Reduksi Dimensi:** Menggunakan **PCA (Principal Component Analysis)** untuk visualisasi data.
+* **Pemodelan (K-Means):**
+    * Menggunakan **Elbow Method** dan **Silhouette Score** untuk menentukan jumlah cluster optimal (K=4).
+    * Melatih model **K-Means Clustering** untuk mengelompokkan data.
+    * Menyimpan data yang sudah memiliki label cluster ke `data_clustering.csv`.
+
+### 2. Notebook Klasifikasi
+* **Pra-pemrosesan:** Menggunakan **One-Hot Encoding** (`pd.get_dummies`) pada data kategorikal.
+* **Persiapan Data:** Melakukan **Train-Test Split** (80% latih, 20% uji).
+* **Pemodelan (Mandatory):**
+    * Melatih model **Decision Tree Classifier**.
+    * Hasil: [TULIS AKURASI ANDA DI SINI, misal: Akurasi 98%]
+* **Pemodelan (Eksplorasi):**
+    * Melatih model **Random Forest Classifier**.
+    * Hasil: [TULIS AKURASI ANDA DI SINI, misal: Akurasi 99%]
+* **Optimasi Model:**
+    * Melakukan **Hyperparameter Tuning** pada Random Forest menggunakan **GridSearchCV**.
+    * **Hasil Akhir (Model Terbaik): Akurasi 99.5%**
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+* Python 3
+* Pandas
+* Numpy
+* Scikit-learn (untuk PCA, K-Means, DecisionTree, RandomForest, GridSearchCV)
+* Joblib (untuk menyimpan model)
+* Matplotlib & Seaborn (untuk visualisasi)
+
+---
+
+## 📂 Struktur Repositori
