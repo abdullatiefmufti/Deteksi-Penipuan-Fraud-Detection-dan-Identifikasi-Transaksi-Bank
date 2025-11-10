@@ -1,12 +1,12 @@
-# Proyek: Analisis Clustering & Klasifikasi Transaksi Bank
+# Portofolio: Deteksi Penipuan (Fraud) & Segmentasi Nasabah Bank
 
-Proyek ini adalah submission untuk kelas "Belajar Machine Learning untuk Pemula" di Dicoding. Proyek ini mendemonstrasikan alur kerja End-to-End Machine Learning, mulai dari pembersihan data, clustering (unsupervised), hingga klasifikasi (supervised) untuk mengidentifikasi pola transaksi.
+Proyek ini adalah *submission* untuk kelas **Belajar Machine Learning untuk Pemula** di Dicoding. Proyek ini mendemonstrasikan alur kerja *End-to-End Machine Learning*, mulai dari pembersihan data, *clustering* (*unsupervised*), hingga klasifikasi (*supervised*) untuk mengidentifikasi pola transaksi.
 
 ## 🎯 Tujuan Proyek
 
 Tujuan dari proyek ini adalah:
 1.  **Clustering (Unsupervised):** Mengelompokkan nasabah ke dalam beberapa cluster berdasarkan perilaku transaksi mereka menggunakan algoritma K-Means.
-2.  **Klasifikasi (Supervised):** Membangun model klasifikasi yang dapat memprediksi cluster (target) seorang nasabah berdasarkan data transaksinya.
+2.  **Klasifikasi (Supervised):** Membangun model klasifikasi yang dapat memprediksi *cluster* (target) seorang nasabah berdasarkan data transaksinya.
 
 ---
 
@@ -31,25 +31,55 @@ Proyek ini dibagi menjadi dua *notebook* utama:
 * **Persiapan Data:** Melakukan **Train-Test Split** (80% latih, 20% uji).
 * **Pemodelan (Mandatory):**
     * Melatih model **Decision Tree Classifier**.
-    * Hasil: [TULIS AKURASI ANDA DI SINI, misal: Akurasi 98%]
+    * Hasil: **Akurasi 98%**
 * **Pemodelan (Eksplorasi):**
     * Melatih model **Random Forest Classifier**.
-    * Hasil: [TULIS AKURASI ANDA DI SINI, misal: Akurasi 99%]
+    * Hasil: **Akurasi 99%**
 * **Optimasi Model:**
     * Melakukan **Hyperparameter Tuning** pada Random Forest menggunakan **GridSearchCV**.
-    * **Hasil Akhir (Model Terbaik): Akurasi 99.5%**
+    * **Hasil Akhir (Model Terbaik): Akurasi 99%**
 
 ---
 
 ## 🛠️ Teknologi yang Digunakan
 
 * Python 3
-* Pandas
-* Numpy
-* Scikit-learn (untuk PCA, K-Means, DecisionTree, RandomForest, GridSearchCV)
+* Pandas & Numpy
+* Scikit-learn (PCA, K-Means, DecisionTree, RandomForest, GridSearchCV)
 * Joblib (untuk menyimpan model)
 * Matplotlib & Seaborn (untuk visualisasi)
 
 ---
 
+## 🏁 Cara Menjalankan Proyek
+
+1.  **Clone Repositori**
+    ```bash
+    git clone [https://github.com/abdullatiefmufti/Deteksi-Penipuan-Fraud-Detection-dan-Identifikasi-Transaksi-Bank.git](https://github.com/abdullatiefmufti/Deteksi-Penipuan-Fraud-Detection-dan-Identifikasi-Transaksi-Bank.git)
+    ```
+
+2.  **Masuk ke Direktori**
+    ```bash
+    cd Deteksi-Penipuan-Fraud-Detection-dan-Identifikasi-Transaksi-Bank
+    ```
+
+3.  **(Opsional) Buat Virtual Environment**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # (Di Windows: venv\Scripts\activate)
+    ```
+
+4.  **Install Dependencies**
+    *(Pastikan Anda membuat file `requirements.txt` terlebih dahulu)*
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5.  **Jalankan Notebook**
+    Buka folder `notebooks/` dan jalankan file `.ipynb` menggunakan Jupyter Notebook atau Google Colab.
+
+---
+
 ## 📂 Struktur Repositori
+
+Deteksi-Penipuan-Fraud-Detection-dan-Identifikasi-Transaksi-Bank/ ├── notebooks/ │ ├── [Clustering]_Submission_Akhir_BMLP_ltp_dull.ipynb │ └── [Klasifikasi]_Submission_Akhir_BMLP_ltp_dull.ipynb ├── data/ │ ├── data_clustering.csv │ └── data_clustering_inverse.csv ├── models/ │ ├── model_clustering.h5 │ ├── PCA_model_clustering.h5 │ ├── decision_tree_model.h5 │ ├── explore_RandomForestClassifier_classification.h5 │ └── tuning_classification.h5 ├── README.md └── requirements.txt
