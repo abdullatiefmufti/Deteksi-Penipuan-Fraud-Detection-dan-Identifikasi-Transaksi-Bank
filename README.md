@@ -82,15 +82,20 @@ Proyek ini dibagi menjadi dua *notebook* utama:
 
 ## 📂 Struktur Repositori
 
-Deteksi-Penipuan-Fraud-Detection-dan-Identifikasi-Transaksi-Bank/ ├── notebooks/ │ 
-                                                                              ├── [Clustering]_Submission_Akhir_BMLP_ltp_dull.ipynb │ 
-                                                                              ├── [Klasifikasi]_Submission_Akhir_BMLP_ltp_dull.ipynb│
-                                                                  ├── data/   │ 
-                                                                              ├── data_clustering.csv │ 
-                                                                              ├── data_clustering_inverse.csv |                  
-                                                                  ├── models/ │ 
-                                                                              ├── model_clustering.h5 │ 
-                                                                              ├── PCA_model_clustering.h5 │ 
-                                                                              ├── decision_tree_model.h5 │ 
-                                                                              ├── explore_RandomForestClassifier_classification.h5 │ 
-                                                                              ├── tuning_classification.h5 |                                                                                                                                  README.md   ├── requirements.txt
+
+## 📁 Struktur Proyek
+
+Deteksi-Penipuan-Fraud-Detection-dan-Identifikasi-Transaksi-Bank/ 
+├── notebooks/ 
+|   ├── [Clustering]_Submission_Akhir_BMLP_ltp_dull.ipynb 
+│   ├── [Klasifikasi]_Submission_Akhir_BMLP_ltp_dull.ipynb
+├── data/
+│   ├── data_clustering.csv 
+│   ├── data_clustering_inverse.csv 
+├── models/ 
+│   ├── model_clustering.h5 
+│   ├── PCA_model_clustering.h5 
+│   ├── decision_tree_model.h5 
+│   ├── explore_RandomForestClassifier_classification.h5 
+│   ├── tuning_classification.h5 
+├── README.md   
